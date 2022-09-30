@@ -1,8 +1,8 @@
 package com.yyyf.weather;
 /*
 天气API:
-今日：https://www.tianqiapi.com/free/day?appid=76299581&appsecret=tEid9VeD
-七日：https://www.tianqiapi.com/free/week?appid=76299581&appsecret=tEid9VeD
+今日：https://www.tianqiapi.com/free/day?appid=自己去注册
+七日：https://www.tianqiapi.com/free/week?appid=自己去注册
  */
 
 import androidx.annotation.NonNull;
@@ -92,7 +92,7 @@ public class MainActivity extends Activity {
         //----------------获取其他天的View----------------//
         other_days = findViewById(R.id.other_days);
 
-        HttpUtil.sendRequestWithOkhttp("https://www.tianqiapi.com/free/week?appid=76299581&appsecret=tEid9VeD", new okhttp3.Callback() {
+        HttpUtil.sendRequestWithOkhttp("https://www.tianqiapi.com/free/week?appid=自己去注册", new okhttp3.Callback() {
             @Override
             public void onFailure(@NotNull Call call, @NotNull IOException e) {
                 Log.w(TAG, "onFailure: 获取失败");
